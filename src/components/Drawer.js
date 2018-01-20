@@ -3,8 +3,8 @@ import MenuItem from "material-ui/MenuItem"
 import Drawer from "material-ui/Drawer"
 import ActionHome from 'material-ui/svg-icons/action/home'
 import ContactIcon from 'material-ui/svg-icons/communication/contacts';
-import { pink500 } from 'material-ui/styles/colors'
-import { purple600 } from 'material-ui/styles/colors'
+import { pink500, purple600 } from 'material-ui/styles/colors'
+import FontIcon from 'material-ui/FontIcon'
 
 
 export const AppDrawer = (props) => {
@@ -32,7 +32,33 @@ export const AppDrawer = (props) => {
           hoverColor={purple600}
         />
       }
-      >Контакты</MenuItem>
+      >Контакты
+      </MenuItem>
+      <MenuItem
+      rightIcon={
+        <FontIcon 
+          className="material-icons" 
+        >
+          help
+        </FontIcon>
+      }
+      >О нас
+      </MenuItem>
+      <MenuItem
+      rightIcon={
+        <FontIcon 
+          className="material-icons" 
+        >
+        drafts
+        </FontIcon>
+        
+      }
+      >Написать нам
+      </MenuItem>
+      <MenuItem
+    >
+      
+    </MenuItem>
   </Drawer>
   )
 }
